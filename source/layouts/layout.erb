@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <% if ENV["GA"] %>
+     <%= partial :google_analytics, locals: {ga_code: ENV["GA"]} %>
+    <% end %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="PhysioBlu, Physiotherapie Biel/Bienne">
+    <meta name="subject" content="Physiotherapie, Sportphysiotherapie, Gesundheit, Training">
+    <meta name="author" content="PhysioBlu">
+    <title><%= current_page.data.title || "PhysioBlu" %></title>
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="icon" href="images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="https://css.gg/css?=|mail|phone">
+    <%= stylesheet_link_tag "site" %>
+  </head>
+  <body>
+    <main class="wrapper">
+      <div class="box">
+        <div class="ribbon ribbon-top-right">
+          <span>site under construction</span>
+        </div>
+      </div>
+      <nav class="navigation">
+        <section class="container">
+          <a class="navigation-title" href="#">
+            <img class="img" src="/images/physioblu.svg" height="30" alt="PhysioBlu" title="PhysioBlu">
+          </a>
+          <ul class="navigation-list float-right">
+            <li class="navigation-item main">
+              <a class="navigation-link" href="#team">Team</a>
+            </li>
+            <li class="navigation-item main">
+              <a class="navigation-link" href="#location">Standort</a>
+            </li>
+          </ul> 
+        </section>
+      </nav>
+      <%= yield %>
+      <footer class="footer">
+        <section class="container">
+          <p class="copyright">
+             &copy; <%= Time.now.year %> PhysioBlu
+          </p>
+        </section>
+      </footer>
+    </main>
+  </body>
+</html>

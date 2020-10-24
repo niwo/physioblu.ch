@@ -1,0 +1,21 @@
+
+
+@import "blue";
+@import "wrapper";
+@import "header";
+@import "navigation";
+@import "footer";
+@import "ribbon";
+
+#team ul {
+  list-style: none;
+}
+
+#team ul li i {
+  display: inline-block;
+}
+
+#team img {
+  border-radius: 50%;
+  margin: 0 0 2rem 2rem;
+}
