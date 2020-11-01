@@ -5,17 +5,29 @@
 @import "header";
 @import "navigation";
 @import "footer";
+
 //@import "ribbon";
 
-#team ul {
+h1.title {
+  margin-top: 2rem;
+}
+
+.team ul {
   list-style: none;
 }
 
-#team ul li i {
+.team ul li i {
   display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
-#team img {
+.team img {
   border-radius: 50%;
-  margin: 0 0 2rem 2rem;
+  margin: 0 0 1rem 4rem;
+}
+
+#mapid {
+  height: 400px;
+  margin-bottom: 2rem; 
 }
