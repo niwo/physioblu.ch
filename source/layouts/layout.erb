@@ -2,7 +2,7 @@
 <html>
   <head>
     <% if ENV["GA"] -%>
-    <%= partial :google_analytics, locals: {ga_code: ENV["GA"]} %>
+    <%= partial "partials/google_analytics", locals: {ga_code: ENV["GA"]} %>
     <% end -%>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
