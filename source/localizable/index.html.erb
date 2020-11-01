@@ -1,0 +1,64 @@
+---
+title: PhysioBlu | Physiotherapie in Biel
+---
+
+<header class="header" id="home">
+  <section class="container">
+    <img src="/images/physioblu.svg" alt="Physioblu"/>
+    <p>Physiotherapie in Biel/Bienne</p>
+  </section>
+</header>
+
+<div class="container">
+  <h2 class="title">Team</h2>
+  <hr>
+  <div class="row team">
+    <% data.team.each do |member| -%>
+    <div class="column">
+      <a href="/<%= I18n.locale %>/team/<%= member.first_name.downcase %>/" >
+        <img src="/images/<%= member.first_name.downcase %>_128.png" alt="<%= member.first_name %>"/>
+        <h3><%= "#{member.first_name} #{member.last_name}" %></h3>
+      </a>
+    </div>
+    <% end -%>
+  </div>
+</div>
+
+<section class="container" id="contact">
+  <h2>Kontakt</h2>
+  <hr>
+  <div class="row team">
+    <% data.team.each do |member| -%>
+    <div class="column">
+      <h4><%= "#{member['first_name']} #{member['last_name']}" %></h4>
+      <p><%= member['title'] %></p>
+      <ul>
+        <li>
+          <a href="mailto:<%= member['email'] %>">
+            <i class="gg-mail"></i> <%= member['email'] %>
+          </a>
+        </li>
+        <li>
+          <a href="tel:<%= member['phone'].gsub(' ', '-') %>">
+            <i class="gg-phone"></i> <%= member['phone'] %>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <% end -%>
+  </div>
+
+  <h3 class="title">Standort</h3>
+  <div id="mapid" class="column"></div>
+  <div class="row">
+    <div class="column">
+      <b>PhysioBlu</b><br />
+      Nidaugasse 22<br />
+      2502 Biel/Bienne
+    </div>
+    <div class="column">
+      <a class="button button-outline" href="https://goo.gl/maps/tZUJPu1WdB5gE8qG6" target="_blank">Auf Google Maps ansehen</a>
+    </div>
+  </div>
+
+</section>
