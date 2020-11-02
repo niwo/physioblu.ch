@@ -1,5 +1,4 @@
-# PhysioBlu Website (minimal)
-
+# PhysioBlu Website
 Landingpage von PhysioBlue [Website](https://physioblu.ch/)
 
 ## Dependencies and Tools 
