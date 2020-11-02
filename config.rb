@@ -1,5 +1,5 @@
 
-activate :i18n
+activate :i18n, mount_at_root: false
 
 I18n.available_locales = [:de]
 
