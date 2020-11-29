@@ -23,15 +23,21 @@
     <main class="wrapper">
       <nav class="navigation">
         <section class="container">
-          <a class="navigation-title" href="/">
+          <a href="<%= "/#{I18n.locale}" %>" class="navigation-title")>
             <img class="img" src="/images/physioblu.svg" height="30" alt="PhysioBlu" title="PhysioBlu">
           </a>
           <ul class="navigation-list float-right">
             <li class="navigation-item main">
-              <a class="navigation-link" href="#team">Team</a>
+              <%= link_to "Team", "/#{I18n.locale}", fragment: "team", class: "navigation-link" %>
             </li>
             <li class="navigation-item main">
-              <a class="navigation-link" href="#contact">Kontakt</a>
+              <a class="navigation-link" href="<%= url_for("/philosophie/index.html") %>">Philosophie</a>
+            </li>
+            <li class="navigation-item main">
+              <a class="navigation-link" href="<%= url_for("/preise/index.html") %>">Preise</a>
+            </li>
+            <li class="navigation-item main">
+              <%= link_to "Kontakt", "/#{I18n.locale}", fragment: "contact", class: "navigation-link" %>
             </li>
           </ul> 
         </section>

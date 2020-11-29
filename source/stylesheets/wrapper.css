@@ -10,5 +10,7 @@
 }
 .wrapper > .container {
   padding-bottom: 1.5rem;
-  padding-top: 7.5rem
+}
+.wrapper .header {
+  margin-bottom: 7.5rem;
 }

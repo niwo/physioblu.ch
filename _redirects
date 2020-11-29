@@ -1,4 +1,3 @@
-
-# Redirects based on browser language settings, de is default 
+# Redirects based on browser language settings, de is default
 /  /de/  302  Language=de
 /  /de/  302
