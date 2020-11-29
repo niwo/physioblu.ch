@@ -13,9 +13,9 @@ title: PhysioBlu | Physiotherapie in Biel
   <h2 class="title">Team</h2>
   <hr>
   <div class="row team">
-    <% data.team.each do |member| -%>
+    <% data.members.each_value do |member| -%>
     <div class="column">
-      <a href="/<%= I18n.locale %>/team/<%= member.first_name.downcase %>/" >
+      <a href="<%= "/#{I18n.locale}/team/#{member.first_name.downcase}/" %>">
         <img src="/images/<%= member.first_name.downcase %>_128.png" alt="<%= member.first_name %>"/>
         <h3><%= "#{member.first_name} #{member.last_name}" %></h3>
       </a>
@@ -28,7 +28,7 @@ title: PhysioBlu | Physiotherapie in Biel
   <h2>Kontakt</h2>
   <hr>
   <div class="row team">
-    <% data.team.each do |member| -%>
+    <% data.members.each_value do |member| -%>
     <div class="column">
       <h4><%= "#{member['first_name']} #{member['last_name']}" %></h4>
       <p><%= member['title'] %></p>
