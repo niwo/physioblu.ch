@@ -1,12 +1,14 @@
 # PhysioBlu Website
-Landingpage von PhysioBlue [Website](https://physioblu.ch/)
+
+Website von PhysioBlue - [physioblu.ch](https://physioblu.ch/)
+
 
 ## Dependencies and Tools 
 
 - [Middleman](https://middlemanapp.com/) static page generator
 - [Milligram](https://milligram.io/) css framework
 - [Leaflet](https://leafletjs.com/) OpenStreemap Einbindung
-- Google Analytics
+
 
 ## Deployment
 
