@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="PhysioBlu, Physiotherapie Biel/Bienne">
-    <meta name="subject" content="Physiotherapie, Sportphysiotherapie, Therapie, Gesundheit, Training">
+    <meta name="subject" content="Physiotherapie, Physio, Sportphysiotherapie, Therapie, Gesundheit, Training">
     <meta name="author" content="PhysioBlu">
     <title><%= current_page.data.title || "PhysioBlu" %></title>
     <link rel="icon" href="/images/favicon.ico"/>
@@ -22,27 +22,30 @@
   <body>
     <main class="wrapper">
       <nav class="navigation">
-        <section class="container">
-          <a href="<%= "/#{I18n.locale}" %>" class="navigation-title")>
-            <img class="img" src="/images/physioblu.svg" height="30" alt="PhysioBlu" title="PhysioBlu">
-          </a>
-          <ul class="navigation-list float-right">
-            <li class="navigation-item main">
-              <%= link_to "Team", "/#{I18n.locale}", fragment: "team", class: "navigation-link" %>
-            </li>
-            <li class="navigation-item main">
-              <a class="navigation-link" href="<%= url_for("/philosophie/index.html") %>">Philosophie</a>
-            </li>
-            <li class="navigation-item main">
-              <a class="navigation-link" href="<%= url_for("/preise/index.html") %>">Preise</a>
-            </li>
-            <li class="navigation-item main">
-              <%= link_to "Kontakt", "/#{I18n.locale}", fragment: "contact", class: "navigation-link" %>
-            </li>
-          </ul> 
-        </section>
+        <a href="<%= "/#{I18n.locale}" %>" class="logo")>
+          <img src="/images/physioblu.svg" alt="PhysioBlu" title="PhysioBlu">
+        </a>
+
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li>
+            <%= link_to "Team", "/#{I18n.locale}", fragment: "team" %>
+          </li>
+          <li>
+            <a href="<%= url_for("/philosophie/index.html") %>">Philosophie</a>
+          </li>
+          <li>
+            <a href="<%= url_for("/preise/index.html") %>">Preise</a>
+          </li>
+          <li>
+            <%= link_to "Kontakt", "/#{I18n.locale}", fragment: "contact" %>
+          </li>
+        </ul>
       </nav>
+
       <%= yield %>
+
       <footer class="footer">
         <section class="container">
           <hr />

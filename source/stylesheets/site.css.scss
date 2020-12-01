@@ -1,12 +1,13 @@
-
-
 @import "blue";
 @import "wrapper";
 @import "header";
 @import "navigation";
 @import "footer";
-
 //@import "ribbon";
+
+body {
+  margin: 0; 
+}
 
 h1.title {
   margin-top: 2rem;
@@ -39,4 +40,8 @@ hr {
 #mapid {
   height: 400px;
   margin-bottom: 2rem; 
+}
+
+ul {
+  list-style-type: disc;
 }
