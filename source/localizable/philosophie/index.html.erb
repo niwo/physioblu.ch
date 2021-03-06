@@ -1,32 +1,18 @@
---
-title: Philosophie
 ---
-
+title_translation_key: phylosophie
+---
 
 <header class="header">
   <section class="container">
-    <h1>Philosophie</h1>
+    <h1><%= t "phylosophie" %></h1>
   </section>
 </header>
 
-
 <div class="container">
-  <p>
-    Wir betrachten den Menschen als <b>Ganzes</b>.
-    Aus unserer Sicht entsteht ein Problem auf verschiedenen Ebenen:
-    <ul>
-      <li>der mechanischen mit Muskeln, Knochen, Bändern, Sehnen, Faszien</li>
-      <li>des Stoffwechsels mit der Funktion der Organe</li>
-      <li>der psychoemotionalen mit allen Gedanken und Emotionen</li>
-    </ul>
-    In einer Behandlung versuchen wir alle Ebenen miteinzubeziehen.
-  </p>
-  <p>
-    Uns ist es wichtig, dass sich unsere Kunden verstanden fühlen und wir uns die nötige Zeit nehmen, um ihre Bedürfnisse erfassen zu können.
-  </p>
+  <%= Markdown.renderer.render(I18n.t("phylosophie_text")).html_safe %>
 </div>
 
 <section class="container">
   <hr>
-  <a class="button" href="<%= url_for('/') %>">Zurück</a>
+  <a class="button" href="<%= url_for('/') %>"><%= t "back" %></a>
 </section>

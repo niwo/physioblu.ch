@@ -1,51 +1,37 @@
 --
-title: Preise
+title_translation_key: pricing
 ---
 
 <header class="header">
   <section class="container">
-    <h1>Preise</h1>
+    <h1><%= t "pricing" %></h1>
   </section>
 </header>
 
 <div class="container">
-  <h2>Krankenkasse</h2>
-  <p>
-    Mit einer Verordnung vom Arzt wird die Physiotherapie von der Grundversicherung übernommen, die Rechnung wird direkt an die Krankenkasse gesendet.
-  </p>
-  <h2>Selbstzahler</h2>
-  <p>
-    Selbstverständlich können sie auch ohne Verordnung zu uns kommen und die Rechnung selber bezahlen.
-  </p>
+  <%= Markdown.renderer.render(I18n.t("pricing_text")).html_safe %>
+
   <table>
     <thead>
       <tr>
-        <th>Angebot</th>
-        <th>Einheiten</th>
-        <th>Preis in CHF</th>
+        <th><%= t "offers.offer" %></th>
+        <th><%= t "offers.units" %></th>
+        <th style="text-align:right"><%= t "offers.price_in" %> CHF</th>
       </tr>
     </thead>
     <tbody>
+      <% data.pricing.physio.each do |offer| %>
       <tr>
-        <td>Physiotherapie</td>
-        <td>30 Minuten</td>
-        <td>60.-</td>
+        <td><%= t "offers.physio" %></td>
+        <td><%= offer["units"] %> <%= t "units.minutes" %></td>
+        <td style="text-align:right"><%= offer["price"] %></td>
       </tr>
-      <tr>
-        <td>Physiotherapie</td>
-        <td>45 Minuten</td>
-        <td>90.-</td>
-      </tr>
-      <tr>
-        <td>Physiotherapie</td>
-        <td>60 Minuten</td>
-        <td>120.-</td>
-      </tr>
+      <% end %>
     </tbody>
   </table>
 </div>
 
 <section class="container">
   <hr>
-  <a class="button" href="<%= url_for('/') %>">Zurück</a>
+  <a class="button" href="<%= url_for('/') %>"><%= t "back" %></a>
 </section>
