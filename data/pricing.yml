@@ -5,8 +5,8 @@ physio:
     units: 30
     price: 60.-
   -
-    units: 30
-    price: 60.-
+    units: 45
+    price: 90.-
   -
-    units: 30
-    price: 60.-
+    units: 60
+    price: 120.-
