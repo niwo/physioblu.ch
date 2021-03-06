@@ -1,12 +1,15 @@
 ---
 de:
+  paths:
+    pricing: preise
+    philosophy: philosophie
   meta_keywords: Physiotherapie, Physiotherapie Biel, physio, phyiso Biel, Sportphysiotherapie, Sportphysiotherapie Biel, Therapie, Gesundheit, Training, Faszientherapie
   meta_title: PhysioBlu Biel/Bienne - Physiotherapie, Training &amp; Faszientherapie
   meta_description: Physiotherapie in Biel – Nidaugasse 22 – ☎ 032 508 52 82. Physiotherapie, Sportphysiotherapie und Faszientherapie. Keine Wartefristen!
   headline: Physiotherapie in Biel/Bienne
   team: Team
   pricing: Preise
-  phylosophie: Philosophie
+  philosophy: Philosophie
   contact: Kontakt
   location: Standort
   about_me: Über mich
@@ -24,7 +27,7 @@ de:
     line_2: 2502 Biel/Bienne
   languages: Sprachen
 
-  phylosophie_text: |
+  philosophy_text: |
     Wir betrachten den Menschen als Ganzes, bestehend aus dem Körper mit Gelenken, Muskeln, Faszien, den Organen, aber auch allen Gedanken und Emotionen.
 
     Uns ist es wichtig, dass sich unsere Kunden ernst genommen fühlen und wir uns die nötige Zeit nehmen, um ihre Bedürfnisse erfassen zu können und ihre Probleme zu verstehen. Das ermöglicht eine optimale, individuell angepasste Behandlung zu gewährleisten.

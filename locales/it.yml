@@ -1,12 +1,15 @@
 ---
 it:
+  paths:
+    pricing: prezzi
+    philosophy: filosofia
   meta_keywords: Fisioterapia, fisio, fisioterapia sportiva, terapia, salute, allenamento, terapia della fascia
   meta_title: PhysioBlu Biel/Bienne - Fisioterapia, allenamento &amp; terapia della fascia
   meta_description: Fisioterapia a Biel/Bienne – Nidaugasse 22 – ☎ 032 508 52 82. Fisioterapia, fisioterapia sportiva e terapia della fascia.
   headline: Fisioterapia a Biel/Bienne
   team: Team
   pricing: Tariffe
-  phylosophie: Filosofia
+  philosophy: Filosofia
   contact: Contatto
   location: Posizione
   about_me: Su di me
@@ -24,7 +27,7 @@ it:
     line_2: 2502 Biel/Bienne
   languages: Lingue
 
-  phylosophie_text: |
+  philosophy_text: |
     La nostra filosofia è quella di considerare la persona come un tutt’uno, con i suoi sintomi e dolori nel corpo, fatto di muscoli e articolazioni, ma anche di visceri, pensieri ed emozioni.
 
     Per noi è importante che la persona si senta ascoltata e compresa nel suo bisogno, con i tempi che necessita. 

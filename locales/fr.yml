@@ -1,12 +1,15 @@
 ---
 fr:
+  paths:
+    pricing: tarif
+    philosophy: philosophie
   meta_keywords: thérapie physique, thérapie physique Bienne, physio, phyiso Bienne, physiothérapie sportive, physiothérapie sportive Bienne, Thérapie, Sante, formation, thérapie fascia
   meta_title: PhysioBlu Biel/Bienne - thérapie physique, Training &amp; thérapie fascia
   meta_description: thérapie physique à Bienne – Rue Nidau 22 – ☎ 032 508 52 82. thérapie physique, thérapie physique sportive et thérapie fascia.
   headline: Thérapie Physique à Bienne
   team: Equipe
   pricing: Tarif
-  phylosophie: Philosophie
+  philosophy: Philosophie
   contact: Contact
   location: Lieu
   about_me: À propos de moi
@@ -24,7 +27,7 @@ fr:
     line_2: 2502 Biel/Bienne
   languages: Langues
 
-  phylosophie_text: |
+  philosophy_text: |
     Notre philosophie est de considérer la personne comme un tout, avec ses symptômes et ses douleurs dans le corps, composé de muscles et d'articulations, mais aussi de viscères, de pensées et d'émotions.
 
     Il est important pour nous que la personne se sente entendue et comprise dans son besoin, dans le temps dont elle a besoin. 
