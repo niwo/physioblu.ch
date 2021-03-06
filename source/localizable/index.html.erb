@@ -1,7 +1,5 @@
 ---
-title:
-  de: Physiotherapie in Biel
-  it: Fisioterapia a Bienne
+title_translation_key: headline
 ---
 
 <header class="header" id="home">
@@ -31,7 +29,7 @@ title:
     <% data.members.each_value do |member| -%>
     <div class="column">
       <h4><%= "#{member['first_name']} #{member['last_name']}" %></h4>
-      <p><%= member['title'] %></p>
+      <p><%= member['title'][lang] %></p>
       <ul>
         <li>
           <a href="mailto:<%= member['email'] %>">
@@ -52,14 +50,14 @@ title:
   <div class="row">
     <div class="column">
       <b>PhysioBlu</b><br />
-      Nidaugasse 22<br />
-      2502 Biel/Bienne
+      <%= t "address.line_1" %><br />
+      <%= t "address.line_2" %>
     </div>
     <div class="column">
-      <a class="button button-outline" href="https://goo.gl/maps/tZUJPu1WdB5gE8qG6" target="_blank">Auf Google Maps ansehen</a>
+      <a class="button button-outline" href="https://goo.gl/maps/tZUJPu1WdB5gE8qG6" target="_blank"><%= t "show_on_gmaps" %></a>
     </div>
   </div>
 </section>
 <% content_for :scripts do %>
-  <%= javascript_include_tag "map" %>
+  <%= partial "partials/map" %>
 <% end %>

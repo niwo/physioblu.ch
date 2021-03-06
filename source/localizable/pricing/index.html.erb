@@ -1,0 +1,38 @@
+--
+title_translation_key: pricing
+---
+
+<header class="header">
+  <section class="container">
+    <h1><%= t "pricing" %></h1>
+  </section>
+</header>
+
+<div class="container">
+  <%= Markdown.renderer.render(I18n.t("pricing_text")).html_safe %>
+
+  <h3><%= t "pricing" %></h3>
+  <table>
+    <thead>
+      <tr>
+        <th><%= t "offers.offer" %></th>
+        <th><%= t "offers.units" %></th>
+        <th style="text-align:right"><%= t "offers.price_in" %> CHF</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% data.pricing.physio.each do |offer| %>
+      <tr>
+        <td><%= t "offers.physio" %></td>
+        <td><%= offer["units"] %> <%= t "units.minutes" %></td>
+        <td style="text-align:right"><%= offer["price"] %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<section class="container">
+  <hr>
+  <a class="button" href="<%= url_for('/') %>"><%= t "back" %></a>
+</section>

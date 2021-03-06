@@ -13,17 +13,3 @@ after_build do |builder|
   builder.thor.source_paths << File.dirname(__FILE__)
   builder.thor.copy_file(src, dst)
 end
-
-
-helpers do
-  #use frontmatter for I18n titles
-  def page_title(page)
-    if page.data.title.is_a?(Hash) && page.data.title[I18n.locale]
-      return "#{page.data.title.send(I18n.locale)} - PhysioBlu"
-    elsif page.data.title
-      return "#{page.data.title} - PhysioBlu"
-    else
-      nil
-    end
-  end
-end

@@ -6,7 +6,7 @@
     <% end -%>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title><%= page_title(current_page) || "PhysioBlu" %></title>
+    <title><%= AppHelper.page_title(current_page) || "PhysioBlu" %></title>
     <%= partial "partials/seo" %>
     <link rel="icon" href="/images/favicon.ico"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"/>
@@ -27,8 +27,8 @@
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="menu">
           <li><%= link_to t("team"), "/#{I18n.locale}", fragment: "team" %></li>
-          <li><a href="<%= url_for("/philosophie/index.html") %>"><%= t "phylosophie" %></a></li>
-          <li><a href="<%= url_for("/preise/index.html") %>"><%= t "pricing" %></a></li>
+          <li><a href="<%= url_for("/philosophy/index.html") %>"><%= t "philosophy" %></a></li>
+          <li><a href="<%= url_for("/pricing/index.html") %>"><%= t "pricing" %></a></li>
           <li><%= link_to t("contact"), "/#{I18n.locale}", fragment: "contact" %></li>
         </ul>
       </nav>
@@ -36,9 +36,15 @@
       <footer class="footer">
         <section class="container">
           <hr />
-          <p class="copyright">
+          <span class="copyright">
              &copy; <%= Time.now.year %> PhysioBlu
-          </p>
+          </span>
+          <span class="float-right">
+            <%= t "languages" %>:
+            <% langs.each_with_index do |lang, i| %>
+              <%= link_to lang, "/#{lang}" %> <%= "|" unless langs.size == i + 1  %>
+            <% end %>
+          </span>
         </section>
       </footer>
     </main>
