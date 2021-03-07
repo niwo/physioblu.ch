@@ -28,6 +28,7 @@ de:
     line_1: Nidaugasse 22
     line_2: 2502 Biel/Bienne
   languages: Sprachen
+  translation_not_available: Der Text steht in dieser Sprache leider nicht zur Verfügung.
 
   philosophy_text: |
     ## Philosophie

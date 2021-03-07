@@ -28,6 +28,7 @@ fr:
     line_1: Rue de Nidau 22
     line_2: 2502 Biel/Bienne
   languages: Langues
+  translation_not_available: Malheureusement, le texte n'est pas disponible dans cette langue.
 
   philosophy_text: |
     ## Philosophie
