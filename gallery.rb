@@ -21,7 +21,7 @@ images.each do |image_path|
   pipeline.resize_to_fit(200, 200).call(destination: "#{GALLERY_DIR}/thumbs/#{File.basename(image_path)}")
 end
 
-# output html
+# output html help
 puts
 puts "Use the following markup to referenc all images:"
 puts "-" * 60 
