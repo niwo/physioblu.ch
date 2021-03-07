@@ -45,3 +45,33 @@ hr {
 ul {
   list-style-type: disc;
 }
+
+.headline {
+  color: darkblue;
+  font-size: larger;
+  font-weight: 400;
+}
+
+.philosophy-background {
+  background: url(/images/philosophy_background.jpg);
+  height: 28rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pricing-background {
+  background: url(/images/pricing_background.jpg);
+  height: 28rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-background {
+  background: url(/images/home_background.jpg);
+  height: 28rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
