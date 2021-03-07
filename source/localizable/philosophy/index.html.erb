@@ -1,12 +1,8 @@
 ---
-title_translation_key: phylosophie
+title_translation_key: philosophy
 ---
 
-<header class="header">
-  <section class="container">
-    <h1><%= t "philosophy" %></h1>
-  </section>
-</header>
+<header class="header philosophy-background"></header>
 
 <div class="container">
   <%= Markdown.renderer.render(I18n.t("philosophy_text")).html_safe %>

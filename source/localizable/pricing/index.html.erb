@@ -1,12 +1,8 @@
---
+---
 title_translation_key: pricing
 ---
 
-<header class="header">
-  <section class="container">
-    <h1><%= t "pricing" %></h1>
-  </section>
-</header>
+<header class="header pricing-background"></header>
 
 <div class="container">
   <%= Markdown.renderer.render(I18n.t("pricing_text")).html_safe %>
