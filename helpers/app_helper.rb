@@ -11,4 +11,9 @@ module AppHelper
     end
   end
 
+  def self.page_reference(page)
+    ref = page.source_file.gsub(/.*localizable/, "")
+    ref.gsub(".erb", "") 
+  end
+
 end

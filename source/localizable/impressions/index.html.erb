@@ -1,0 +1,96 @@
+---
+title_translation_key: impressions
+ref: /impressions/index.html
+---
+
+<% content_for :header do -%>
+<%= stylesheet_link_tag "https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/css/lightgallery.css" -%>
+<% end %>
+
+<header class="header pricing-background"></header>
+
+<div class="container">
+  <h1><%= t "impressions" %></h1>
+
+  <div id="lightgallery">
+    <a href="/images/gallery/physioblu-1.jpg">
+      <img src="/images/gallery/thumbs/physioblu-1.jpg">
+    </a>
+    <a href="/images/gallery/physioblu-2.jpg">
+      <img src="/images/gallery/thumbs/physioblu-2.jpg">
+    </a>
+    <a href="/images/gallery/physioblu-3.jpg">
+      <img src="/images/gallery/thumbs/physioblu-3.jpg">
+    </a>
+    <a href="/images/gallery/physioblu-4.jpg">
+      <img src="/images/gallery/thumbs/physioblu-4.jpg">
+    </a>
+    <a href="/images/gallery/physioblu-5.jpg">
+      <img src="/images/gallery/thumbs/physioblu-5.jpg">
+    </a>
+    <a href="/images/gallery/physioblu-7.jpg">
+      <img src="/images/gallery/thumbs/physioblu-7.jpg">
+    </a>
+    <a href="/images/gallery/physioblu-9.jpg">
+      <img src="/images/gallery/thumbs/physioblu-9.jpg">
+    </a>
+    <a href="/images/gallery/physioblu-10.jpg">
+      <img src="/images/gallery/thumbs/physioblu-10.jpg">
+    </a>
+    <a href="/images/gallery/physioblu-11.jpg">
+      <img src="/images/gallery/thumbs/physioblu-11.jpg">
+    </a>
+    <a href="/images/gallery/physioblu-13.jpg">
+      <img src="/images/gallery/thumbs/physioblu-13.jpg">
+    </a>
+    <a href="/images/gallery/physioblu-14.jpg">
+      <img src="/images/gallery/thumbs/physioblu-14.jpg">
+    </a>
+    <a href="/images/gallery/physioblu-15.jpg">
+      <img src="/images/gallery/thumbs/physioblu-15.jpg">
+    </a>
+    <a href="/images/gallery/physioblu-16.jpg">
+      <img src="/images/gallery/thumbs/physioblu-16.jpg">
+    </a>
+    <a href="/images/gallery/physioblu-17.jpg">
+      <img src="/images/gallery/thumbs/physioblu-17.jpg">
+    </a>
+    <a href="/images/gallery/physioblu-18.jpg">
+      <img src="/images/gallery/thumbs/physioblu-18.jpg">
+    </a>
+    <a href="/images/gallery/physioblu-19.jpg">
+      <img src="/images/gallery/thumbs/physioblu-19.jpg">
+    </a>
+    <a href="/images/gallery/physioblu-20.jpg">
+      <img src="/images/gallery/thumbs/physioblu-20.jpg">
+    </a>
+    <a href="/images/gallery/physioblu-21.jpg">
+      <img src="/images/gallery/thumbs/physioblu-21.jpg">
+    </a>
+    <a href="/images/gallery/physioblu-22.jpg">
+      <img src="/images/gallery/thumbs/physioblu-22.jpg">
+    </a>
+    <a href="/images/gallery/physioblu-23.jpg">
+      <img src="/images/gallery/thumbs/physioblu-23.jpg">
+    </a>
+    <a href="/images/gallery/physioblu-24.jpg">
+      <img src="/images/gallery/thumbs/physioblu-24.jpg">
+    </a>
+    <a href="/images/gallery/physioblu-25.jpg">
+      <img src="/images/gallery/thumbs/physioblu-25.jpg">
+    </a>
+    <a href="/images/gallery/physioblu-26.jpg">
+      <img src="/images/gallery/thumbs/physioblu-26.jpg">
+    </a>
+    <a href="/images/gallery/physioblu-27.jpg">
+      <img src="/images/gallery/thumbs/physioblu-27.jpg">
+    </a>
+  </div>
+</div>
+
+<% content_for :scripts do %>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/js/lightgallery.min.js"></script>
+<script>
+  lightGallery(document.getElementById('lightgallery'), {download: false});
+</script>
+<% end %>
