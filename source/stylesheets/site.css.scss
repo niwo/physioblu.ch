@@ -75,3 +75,25 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.team-background {
+  background: url(/images/team_background.jpg);
+  height: 28rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+div.box {
+  display: flex;
+  color: #ffffff;
+  background-color: #79CFE0;
+  border-radius:.5em;
+  border: 1px solid;
+  margin: 10px 0px;
+  padding:12px;
+}
+
+div.box i {
+  white-space: nowrap;
+  margin-right: 2rem;
+}

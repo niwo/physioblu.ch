@@ -9,7 +9,16 @@
 
 <div class="container">
   <h2><%= t "about_me" %></h2>
-  <%= Markdown.renderer.render(member.bio[lang]).html_safe %>
+
+
+  <% if member.bio[lang] -%>
+    <%= Markdown.renderer.render(member.bio[lang]).html_safe %>
+  <% else -%>
+    <div class="box info">
+      <i class="gg-info" aria-hidden="true">&nbsp;</i>
+      Der Text steht in dieser Sprache leider nicht zur Verfügung.
+    </div>
+  <% end %>
 
   <div class="team">
     <h3><%= t "contact" %></h3>
