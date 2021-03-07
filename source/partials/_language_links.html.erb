@@ -1,0 +1,8 @@
+<% langs.each_with_index do |language, i| -%>
+  <% if lang != language -%>
+    <a href="<%= url_for(AppHelper.page_reference(current_page), locale: language) %>"><%= language %></a>
+  <% else -%>
+    <%= language %>
+  <% end -%>
+  <%= "|" unless langs.size == i + 1  %>
+<% end -%>

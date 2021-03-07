@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://css.gg/css?=|mail|phone">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
     <%= stylesheet_link_tag "site" %>
+    <%= yield_content :header %>
   </head>
   <body>
     <main class="wrapper">
@@ -28,6 +29,7 @@
         <ul class="menu">
           <li><%= link_to t("team"), "/#{I18n.locale}", fragment: "team" %></li>
           <li><a href="<%= url_for("/philosophy/index.html") %>"><%= t "philosophy" %></a></li>
+          <li><a href="<%= url_for("/impressions/index.html") %>"><%= t "impressions" %></a></li>
           <li><a href="<%= url_for("/pricing/index.html") %>"><%= t "pricing" %></a></li>
           <li><%= link_to t("contact"), "/#{I18n.locale}", fragment: "contact" %></li>
         </ul>
@@ -41,9 +43,7 @@
           </span>
           <span class="float-right">
             <%= t "languages" %>:
-            <% langs.each_with_index do |lang, i| %>
-              <%= link_to lang, "/#{lang}" %> <%= "|" unless langs.size == i + 1  %>
-            <% end %>
+            <%= partial "partials/language_links" %>
           </span>
         </section>
       </footer>
