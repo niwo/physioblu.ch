@@ -7,7 +7,6 @@ THUMBS_DIR = "#{GALLERY_DIR}/thumbs"
 
 Dir.mkdir(THUMBS_DIR) unless Dir.exist?(THUMBS_DIR)
 
-
 images = Dir.glob("#{GALLERY_DIR}/*.jpg")
 
 # create thumbs & adapt picture size for web
@@ -18,7 +17,7 @@ images.each do |image_path|
   pipeline.resize_to_fit(1280, 720).call(destination: image_path)
 
   puts "Creating thumbnail #{File.basename(image_path)}"
-  pipeline.resize_to_fit(200, 200).call(destination: "#{GALLERY_DIR}/thumbs/#{File.basename(image_path)}")
+  pipeline.resize_to_fill(150, 150).call(destination: "#{GALLERY_DIR}/thumbs/#{File.basename(image_path)}")
 end
 
 # output html help
