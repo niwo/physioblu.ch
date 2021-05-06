@@ -72,7 +72,7 @@ ul {
   background: url(/images/home_background.jpg);
   height: 28rem;
   background-position: center;
-  background-size: cover;
+  /*background-size: cover;*/
   background-repeat: no-repeat;
 }
 
@@ -96,4 +96,11 @@ div.box {
 div.box i {
   white-space: nowrap;
   margin-right: 2rem;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
