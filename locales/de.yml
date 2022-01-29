@@ -4,14 +4,14 @@ de:
     pricing: preise
     philosophy: philosophie
     impressions: impressionen
-  meta_keywords: Physiotherapie, Physiotherapie Biel, physio, phyiso Biel, Sportphysiotherapie, Sportphysiotherapie Biel, Therapie, Gesundheit, Training, Faszientherapie
   meta_title: PhysioBlu Biel/Bienne - Physiotherapie, Training &amp; Faszientherapie
-  meta_description: Physiotherapie in Biel – Nidaugasse 22 – ☎ 032 508 52 82. Physiotherapie, Sportphysiotherapie und Faszientherapie. Keine Wartefristen!
+  meta_description: Ihre Physiotherapie in Biel, Nidaugasse 22, ☎ 032 508 52 82. Christa Wolfgramm (Dipl. Physiotherapeutin und Sportphysio) und Stefano Scomazzon (Dipl. Physiotherapeut). Ihre Spezialisten für Physiotherapie, Sportphysiotherapie und Faszientherapie.
   headline: Physiotherapie in Biel/Bienne
   team: Team
   pricing: Preise
   philosophy: Philosophie
   contact: Kontakt
+  phone: Telefonnummer
   location: Standort
   impressions: Impressionen
   about_me: Über mich
@@ -28,10 +28,11 @@ de:
     line_1: Nidaugasse 22
     line_2: 2502 Biel/Bienne
   languages: Sprachen
+
   translation_not_available: Der Text steht in dieser Sprache leider nicht zur Verfügung.
 
   philosophy_text: |
-    ## Philosophie
+    # Philosophie
 
     Wir betrachten den Menschen als Ganzes, bestehend aus dem Körper mit Gelenken, Muskeln, Faszien, den Organen, aber auch allen Gedanken und Emotionen.
 
@@ -42,7 +43,7 @@ de:
     Wir lieben die Arbeit mit Menschen unterschiedlicher Herkunft, sie stellt für uns eine Bereicherung dar und ist eine Möglichkeit stetig Neues zu lernen.
 
   pricing_text: |
-    ## Verrechnung der Leistungen
+    # Verrechnung der Leistungen
 
     Mit einer Verordnung vom Arzt wird die Physiotherapie von der Grundversicherung übernommen, die Rechnung wird direkt an die Krankenkasse gesendet.
 

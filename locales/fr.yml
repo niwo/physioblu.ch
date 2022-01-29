@@ -4,14 +4,14 @@ fr:
     pricing: tarif
     philosophy: philosophie
     impressions: impressions
-  meta_keywords: physiothérapie, thérapie physique, physiothérapie Bienne, physio, phyiso Bienne, physiothérapie sportive, physiothérapie sportive Bienne, Thérapie, Sante, formation, thérapie fascia
   meta_title: PhysioBlu Biel/Bienne - thérapie physique, Training &amp; thérapie fascia
-  meta_description: thérapie physique à Bienne – Rue Nidau 22 – ☎ 032 508 52 82. thérapie physique, thérapie physique sportive et thérapie fascia.
+  meta_description: Thérapie physique à Bienne, Rue Nidau 22, ☎ 032 508 52 82. Christa Wolfgramm (Physiothérapeute diplômé) et Stefano Scomazzon (Physiothérapeute diplômé). Vos spécialistes pour thérapie physique, thérapie physique sportive et thérapie fascia.
   headline: Physiothérapie à Bienne
   team: Equipe
   pricing: Tarif
   philosophy: Philosophie
   contact: Contact
+  phone: Numéro de téléphone
   location: Lieu
   impressions: Impressions
   about_me: À propos de moi
@@ -31,7 +31,7 @@ fr:
   translation_not_available: Malheureusement, le texte n'est pas disponible dans cette langue.
 
   philosophy_text: |
-    ## Philosophie
+    # Philosophie
 
     Nous considérons l’être humain comme un tout : le corps composé d’articulations, de muscles, de fascias et d’organes, mais aussi de pensées et d’émotions.
 
@@ -42,7 +42,7 @@ fr:
     Nous aimons travailler avec des personnes d'horizons différents, c'est un enrichissement pour nous ainsi qu’une occasion de faire de nouvelles connaissances.
 
   pricing_text: |
-    ## Facturation des services
+    # Facturation des services
 
     Sur ordonnance du médecin, l'assurance maladie de base prend en charge les traitements de physiothérapie.
 

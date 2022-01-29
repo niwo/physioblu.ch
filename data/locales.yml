@@ -1,5 +1,12 @@
 ---
 
-de: de_DE
-fr: fr_FR
-it: it_IT
+
+de:
+  name: Deutsch
+  code: de_DE
+fr:
+  name: Français
+  code: fr_FR
+it:
+  name: Italiano
+  code: it_IT
