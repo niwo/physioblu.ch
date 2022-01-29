@@ -24,12 +24,12 @@
     <h3><%= t "contact" %></h3>
     <ul>
       <li>
-        <a href="mailto:<%= member['email'] %>">
+        <a href="mailto:<%= member['email'] %>" title="Email">
           <i class="gg-mail"></i> <%= member['email'] %>
         </a>
       </li>
       <li>
-        <a href="tel:<%= member['phone'].gsub(' ', '-') %>">
+        <a href="tel:<%= member['phone'].gsub(' ', '-') %>" title="<%= t("phone") %>">
           <i class="gg-phone"></i> <%= member['phone'] %>
         </a>
       </li>

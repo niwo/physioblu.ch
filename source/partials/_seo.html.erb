@@ -1,20 +1,24 @@
-<meta name="keywords" content="<%= t "meta_keywords" %>" />
-    <meta name="author" content="niwo" />
-    <meta name="description" content="<%= t "meta_description" %>" />
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <link rel="canonical" href="https://physioblu.ch/de/" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="<%= t "meta_title" %>" />
-    <meta property="og:description" content="<%= t "meta_description" %>" />
-    <meta property="og:url" content="https://physioblu.ch/de/" />
-    <meta property="og:site_name" content="PhysioBlu" />
-    <% data.locales.each do |key, value| -%>
-      <% if key == I18n.locale.to_s -%>
-    <meta property="og:locale" content="<%= value %>" >
-      <% else -%>
-    <meta property="og:locale:alternate" content="<%= value %>" >
-      <% end -%>
-    <% end -%>
-    <link rel="alternate" href="https://physioblu.ch/de/" hreflang="de" />
-    <link rel="alternate" href="https://physioblu.ch/it/" hreflang="it" />
-    <link rel="alternate" href="https://physioblu.ch/fr/" hreflang="fr" />
+<meta name="author" content="niwo" />
+<meta name="description" content="<%= t "meta_description" %>" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<link rel="canonical" href="https://physioblu.ch/de/" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="<%= t "meta_title" %>" />
+<meta property="og:description" content="<%= t "meta_description" %>" />
+<meta property="og:url" content="https://physioblu.ch/de/" />
+<meta property="og:site_name" content="PhysioBlu" />
+<meta property="og:image" content="https://physioblu.ch/images/physioblu.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="600">
+<meta property="og:image:height" content="315">
+<meta property="og:image:alt" content="PhysioBlu - <%= t "headline" %>">
+<% data.locales.each do |key, locale| -%>
+  <% if key == I18n.locale.to_s -%>
+<meta property="og:locale" content="<%= locale[:code] %>" >
+  <% else -%>
+<meta property="og:locale:alternate" content="<%= locale[:code] %>" >
+  <% end -%>
+<% end -%>
+<link rel="alternate" href="https://physioblu.ch/de/" hreflang="de" />
+<link rel="alternate" href="https://physioblu.ch/it/" hreflang="it" />
+<link rel="alternate" href="https://physioblu.ch/fr/" hreflang="fr" />

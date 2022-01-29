@@ -4,8 +4,10 @@ title_translation_key: headline
 
 <header class="header home-background" id="home">
   <section class="container">
-    <img src="/images/physioblu.svg" alt="Physioblu"/>
-    <p class="headline"><%= t "headline" %></p>
+    <h1 class="page-title">
+      <img src="/images/physioblu.svg" alt="Physioblu"/>
+    </h1>
+    <p><%= t "headline" %></p>
   </section>
 </header>
 
@@ -15,7 +17,7 @@ title_translation_key: headline
   <div class="row team">
     <% data.members.each_value do |member| -%>
     <div class="column">
-      <a href="<%= "/#{I18n.locale}/team/#{member.first_name.downcase}/" %>">
+      <a href="<%= "/#{I18n.locale}/team/#{member.first_name.downcase}/" %>" title="<%= "#{member.first_name} #{member.last_name}" %>">
         <img src="/images/<%= member.first_name.downcase %>_200.jpg" alt="<%= member.first_name %>"/>
         <h3><%= "#{member.first_name} #{member.last_name}" %></h3>
       </a>
@@ -29,16 +31,16 @@ title_translation_key: headline
   <div class="row team">
     <% data.members.each_value do |member| -%>
     <div class="column">
-      <h4><%= "#{member['first_name']} #{member['last_name']}" %></h4>
+      <h3><%= "#{member['first_name']} #{member['last_name']}" %></h3>
       <p><%= member['title'][lang] %></p>
       <ul>
         <li>
-          <a href="mailto:<%= member['email'] %>">
+          <a href="mailto:<%= member['email'] %>" title="Email">
             <i class="gg-mail"></i> <%= member['email'] %>
           </a>
         </li>
         <li>
-          <a href="tel:<%= member['phone'].gsub(' ', '-') %>">
+          <a href="tel:<%= member['phone'].gsub(' ', '-') %>"  title="<%= t("phone") %>">
             <i class="gg-phone"></i> <%= member['phone'] %>
           </a>
         </li>
@@ -55,7 +57,9 @@ title_translation_key: headline
       <%= t "address.line_2" %>
     </div>
     <div class="column">
-      <a class="button button-outline" href="https://goo.gl/maps/tZUJPu1WdB5gE8qG6" target="_blank"><%= t "show_on_gmaps" %></a>
+      <a class="button button-outline" href="https://goo.gl/maps/tZUJPu1WdB5gE8qG6" title="<%= t "location" %>" rel="noreferrer" target="_blank">
+        <%= t "show_on_gmaps" %>
+      </a>
     </div>
   </div>
 </section>

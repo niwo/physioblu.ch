@@ -7,13 +7,13 @@ title_translation_key: pricing
 <div class="container">
   <%= Markdown.renderer.render(I18n.t("pricing_text")).html_safe %>
 
-  <h3><%= t "pricing" %></h3>
+  <h2><%= t "pricing" %></h2>
   <table>
     <thead>
       <tr>
         <th><%= t "offers.offer" %></th>
         <th><%= t "offers.units" %></th>
-        <th style="text-align:right"><%= t "offers.price_in" %> CHF</th>
+        <th class="align-right"><%= t "offers.price_in" %> CHF</th>
       </tr>
     </thead>
     <tbody>
@@ -21,7 +21,7 @@ title_translation_key: pricing
       <tr>
         <td><%= t "offers.physio" %></td>
         <td><%= offer["units"] %> <%= t "units.minutes" %></td>
-        <td style="text-align:right"><%= offer["price"] %></td>
+        <td class="align-right"><%= offer["price"] %></td>
       </tr>
       <% end %>
     </tbody>

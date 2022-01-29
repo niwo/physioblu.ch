@@ -1,5 +1,5 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="<%= lang %>">
   <head>
     <% if ENV["GA"] -%>
     <%= partial "partials/google_analytics", locals: {ga_code: ENV["GA"]} %>
@@ -10,29 +10,40 @@
     <title><%= AppHelper.page_title(current_page) || "PhysioBlu" %></title>
     <%= partial "partials/seo" %>
     <link rel="icon" href="/images/favicon.ico"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"/> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"/>
-    <link rel="stylesheet" href="https://css.gg/css?=info|mail|phone">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
-    <%= stylesheet_link_tag "site" %>
+    <link rel="canonical" href="https://physioblu.ch"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic" nonce="4AEemGb0xJptoIGFP3Nd" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic" nonce="4AEemGb0xJptoIGFP3Nd" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" nonce="4AEemGb0xJptoIGFP3Nd" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css" nonce="4AEemGb0xJptoIGFP3Nd" />
+    <link rel="stylesheet" href="https://css.gg/css?=info|mail|phone" nonce="4AEemGb0xJptoIGFP3Nd" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" nonce="4AEemGb0xJptoIGFP3Nd" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <%= stylesheet_link_tag "site", nonce: "4AEemGb0xJptoIGFP3Nd" %>
     <%= yield_content :header %>
   </head>
   <body>
     <main class="wrapper">
       <nav class="navigation">
-        <a href="<%= "/#{I18n.locale}" %>" class="logo")>
+        <a href="<%= "/#{I18n.locale}" %>" class="logo" title="PhysioBlu">
           <img src="/images/physioblu.svg" alt="PhysioBlu" title="PhysioBlu">
         </a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="menu">
-          <li><%= link_to t("team"), "/#{I18n.locale}", fragment: "team" %></li>
-          <li><a href="<%= url_for("/philosophy/index.html") %>"><%= t "philosophy" %></a></li>
-          <li><a href="<%= url_for("/impressions/index.html") %>"><%= t "impressions" %></a></li>
-          <li><a href="<%= url_for("/pricing/index.html") %>"><%= t "pricing" %></a></li>
-          <li><%= link_to t("contact"), "/#{I18n.locale}", fragment: "contact" %></li>
+          <li>
+            <%= link_to t("team"), "/#{I18n.locale}", fragment: "team", title: t("team") %>
+          </li>
+          <li>
+            <a href="<%= url_for("/philosophy/index.html") %>" title="<%= t "philosophy" %>"><%= t "philosophy" %></a>
+          </li>
+          <li>
+            <a href="<%= url_for("/impressions/index.html") %>" title="<%= t "impressions" %>"><%= t "impressions" %></a>
+          </li>
+          <li>
+            <a href="<%= url_for("/pricing/index.html") %>" title="<%= t "pricing" %>"><%= t "pricing" %></a>
+          </li>
+          <li>
+            <%= link_to t("contact"), "/#{I18n.locale}", fragment: "contact", title: t("contact") %>
+          </li>
         </ul>
       </nav>
       <%= yield %>
@@ -50,7 +61,7 @@
       </footer>
     </main>
     <!-- Leaflet for OpenStreetmap integration -->
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" nonce="4AEemGb0xJptoIGFP3Nd" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
     <%= yield_content :scripts %>
   </body>
 </html>

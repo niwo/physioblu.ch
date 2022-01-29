@@ -4,14 +4,14 @@ fr:
     pricing: tarif
     philosophy: philosophie
     impressions: impressions
-  meta_keywords: physiothérapie, thérapie physique, physiothérapie Bienne, physio, phyiso Bienne, physiothérapie sportive, physiothérapie sportive Bienne, Thérapie, Sante, formation, thérapie fascia
   meta_title: PhysioBlu Biel/Bienne - thérapie physique, Training &amp; thérapie fascia
-  meta_description: thérapie physique à Bienne – Rue Nidau 22 – ☎ 032 508 52 82. thérapie physique, thérapie physique sportive et thérapie fascia.
+  meta_description: Thérapie physique à Bienne, Rue Nidau 22, ☎ 032 508 52 82. Christa Wolfgramm (Physiothérapeute diplômé) et Stefano Scomazzon (Physiothérapeute diplômé). Vos spécialistes pour thérapie physique, thérapie physique sportive et thérapie fascia.
   headline: Physiothérapie à Bienne
   team: Equipe
   pricing: Tarif
   philosophy: Philosophie
   contact: Contact
+  phone: Numéro de téléphone
   location: Lieu
   impressions: Impressions
   about_me: À propos de moi
@@ -31,21 +31,19 @@ fr:
   translation_not_available: Malheureusement, le texte n'est pas disponible dans cette langue.
 
   philosophy_text: |
-    ## Philosophie
+    # Philosophie
 
-    Notre philosophie est de considérer la personne comme un tout, avec ses symptômes et ses douleurs dans le corps, composé de muscles et d'articulations, mais aussi de viscères, de pensées et d'émotions.
+    Nous considérons l’être humain comme un tout : le corps composé d’articulations, de muscles, de fascias et d’organes, mais aussi de pensées et d’émotions.
 
-    Il est important pour nous que la personne se sente entendue et comprise dans son besoin, dans le temps dont elle a besoin. 
+    Il est important pour nous que nos clients se sentent pris au sérieux et que nous prenions le temps nécessaire pour comprendre leurs besoins et leurs problèmes. Cela nous permet de garantir un traitement optimal et adapté à chaque patient.
 
-    Il est fondamental de comprendre le problème afin de déterminer quel peut être le meilleur traitement pour la personne à l'heure actuelle.
+    Chaque traitement que nous proposons vise à résoudre les symptômes et les problèmes dans les plus brefs délais. Cependant, nous attendons également des clients qu'ils soient prêts à s'engager dans une thérapie et à prendre eux-mêmes des responsabilités. La thérapie peut alors les aider à mieux se connaître.
 
-    Chaque traitement vise à résoudre les symptômes dans les plus brefs délais. Cela peut aussi devenir une expérience pour se connaître soi-même.
-
-    On aime travailler avec les gens, une source inépuisable d'apprentissage.
+    Nous aimons travailler avec des personnes d'horizons différents, c'est un enrichissement pour nous ainsi qu’une occasion de faire de nouvelles connaissances.
 
   pricing_text: |
-    ## Facturation des services
+    # Facturation des services
 
     Sur ordonnance du médecin, l'assurance maladie de base prend en charge les traitements de physiothérapie.
 
-    Vous pouvez venir chez nous, même sans ordonnance du médecin, et payer les séances vous mêmes.
+    Vous pouvez venir chez nous, même sans ordonnance du médecin et payer les séances vous-même.

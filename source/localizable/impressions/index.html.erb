@@ -3,32 +3,19 @@ title_translation_key: impressions
 ---
 
 <% content_for :header do -%>
-<%= stylesheet_link_tag "https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/css/lightgallery.css" -%>
+<%= stylesheet_link_tag "https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/css/lightgallery.css", nonce: "4AEemGb0xJptoIGFP3Nd" -%>
 <% end %>
 
 <header class="header team-background">
 </header>
 
 <div class="container">
-  <h2><%= t "impressions" %></h2>
+  <h1>
+    <%= t "impressions" %>
+  </h1>
   <div id="lightgallery">
     <a href="/images/gallery/physioblu-1.jpg">
       <img src="/images/gallery/thumbs/physioblu-1.jpg">
-    </a>
-    <a href="/images/gallery/physioblu-10.jpg">
-      <img src="/images/gallery/thumbs/physioblu-10.jpg">
-    </a>
-    <a href="/images/gallery/physioblu-11.jpg">
-      <img src="/images/gallery/thumbs/physioblu-11.jpg">
-    </a>
-    <a href="/images/gallery/physioblu-13.jpg">
-      <img src="/images/gallery/thumbs/physioblu-13.jpg">
-    </a>
-    <a href="/images/gallery/physioblu-15.jpg">
-      <img src="/images/gallery/thumbs/physioblu-15.jpg">
-    </a>
-    <a href="/images/gallery/physioblu-16.jpg">
-      <img src="/images/gallery/thumbs/physioblu-16.jpg">
     </a>
     <a href="/images/gallery/physioblu-7.jpg">
       <img src="/images/gallery/thumbs/physioblu-7.jpg">
@@ -36,12 +23,16 @@ title_translation_key: impressions
     <a href="/images/gallery/physioblu-9.jpg">
       <img src="/images/gallery/thumbs/physioblu-9.jpg">
     </a>
+    <a href="/images/gallery/physioblu-43.jpg">
+      <img src="/images/gallery/thumbs/physioblu-43.jpg">
+    </a>
+
   </div>
 </div>
 
 <% content_for :scripts do %>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/js/lightgallery.min.js"></script>
-<script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/js/lightgallery.min.js" nonce="4AEemGb0xJptoIGFP3Nd"></script>
+<script nonce="4AEemGb0xJptoIGFP3Nd">
   lightGallery(document.getElementById('lightgallery'), {download: false});
 </script>
 <% end %>
