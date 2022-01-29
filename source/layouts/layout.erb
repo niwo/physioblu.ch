@@ -6,7 +6,7 @@
     <% end -%>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' cloudfront.net *.cloudfront.net; style-src 'nonce-4AEemGb0xJptoIGFP3Nd' cdnjs.cloudflare.com; script-src 'nonce-4AEemGb0xJptoIGFP3Nd'; font-src 'self' fonts.gstatic.com fonts.googleapis.com cdn.jsdelivr.net 'unsafe-inline'; img-src 'self' unpkg.com api.mapbox.com www.google-analytics.com">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'nonce-4AEemGb0xJptoIGFP3Nd' cdnjs.cloudflare.com unpkg.com css.gg *.netlify.app; script-src 'nonce-4AEemGb0xJptoIGFP3Nd' *.netlify.app; font-src 'self' fonts.gstatic.com fonts.googleapis.com cdn.jsdelivr.net 'unsafe-inline'; img-src 'self' cloudfront.net *.cloudfront.net unpkg.com api.mapbox.com www.google-analytics.com">
     <title><%= AppHelper.page_title(current_page) || "PhysioBlu" %></title>
     <%= partial "partials/seo" %>
     <link rel="icon" href="/images/favicon.ico"/>
