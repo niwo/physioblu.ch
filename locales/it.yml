@@ -3,7 +3,8 @@ it:
   paths:
     pricing: prezzi
     philosophy: filosofia
-    impressions: impressioni
+    impressions: immagini
+  meta_keywords: Fisioterapia, fisio, fisioterapia sportiva, terapia, salute, allenamento, terapia della fascia
   meta_title: PhysioBlu Biel/Bienne - Fisioterapia, allenamento &amp; terapia della fascia
   meta_description: Fisioterapia a Biel/Bienne, Nidaugasse 22, ☎ 032 508 52 82. Christa Wolfgramm (Fisioterapista laureato) et Stefano Scomazzon (Fisioterapista laureato). I tuoi specialisti per fisioterapia, fisioterapia sportiva e terapia della fascia.
   headline: Fisioterapia a Biel/Bienne
@@ -13,7 +14,7 @@ it:
   contact: Contatto
   phone: Numero di telefono
   location: Posizione
-  impressions: Impressioni
+  impressions: Immagini
   about_me: Su di me
   back: indietro
   show_on_gmaps: vedi su google maps
