@@ -1,5 +1,6 @@
 ---
 de:
+  languages: Sprachen
   paths:
     pricing: preise
     philosophy: philosophie

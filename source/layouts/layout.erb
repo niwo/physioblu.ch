@@ -44,6 +44,20 @@
           <li>
             <%= link_to t("contact"), "/#{I18n.locale}", fragment: "contact", title: t("contact") %>
           </li>
+          <li>
+            <%= link_to t("contact"), "/#{I18n.locale}", fragment: "contact", title: t("contact") %>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a class="dropbtn" herf="#"><%= t "languages" %></a>
+              <div class="dropdown-content">
+                <span><%= @app.data.locales[lang][:name] %></span>
+                <% language_options.each do |optlang| %>
+                  <a href="<%= url_for(AppHelper.page_reference(current_page), locale: optlang[:lang]) %>" title="<%= optlang[:title] %>"><%= optlang[:title] %></a>
+                <% end %>
+              </div>
+            </div>
+          </li>
         </ul>
       </nav>
       <%= yield %>

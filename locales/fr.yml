@@ -1,5 +1,6 @@
 ---
 fr:
+  languages: Langues
   paths:
     pricing: tarif
     philosophy: philosophie

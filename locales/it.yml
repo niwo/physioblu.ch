@@ -1,5 +1,6 @@
 ---
 it:
+  languages: Lingues
   paths:
     pricing: prezzi
     philosophy: filosofia
