@@ -1,6 +1,5 @@
 ---
 it:
-  languages: Lingues
   paths:
     pricing: prezzi
     philosophy: filosofia
@@ -29,7 +28,7 @@ it:
   address:
     line_1: Rue de Nidau 22
     line_2: 2502 Biel/Bienne
-  languages: Lingue
+  languages: Lingues
   translation_not_available: Purtroppo il testo non è disponibile in questa lingua..
 
   philosophy_text: |
