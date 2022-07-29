@@ -7,7 +7,7 @@ Website von PhysioBlue - [physioblu.ch](https://physioblu.ch/)
 
 - [Middleman](https://middlemanapp.com/) static page generator
 - [Milligram](https://milligram.io/) css framework
-- [Leaflet](https://leafletjs.com/) OpenStreemap Einbindung
+- [Leaflet](https://leafletjs.com/) OpenStreetmap Einbindung
 
 
 ## Deployment
