@@ -28,6 +28,7 @@
         </a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <% if current_page.source_file.include? "localizable" %>
         <ul class="menu">
           <li>
             <%= link_to t("team"), "/#{I18n.locale}", fragment: "team", title: t("team") %>
@@ -44,7 +45,22 @@
           <li>
             <%= link_to t("contact"), "/#{I18n.locale}", fragment: "contact", title: t("contact") %>
           </li>
+          <li>
+            <%= link_to t("contact"), "/#{I18n.locale}", fragment: "contact", title: t("contact") %>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a class="dropbtn" herf="#"><%= t "languages" %></a>
+              <div class="dropdown-content">
+                <span><%= @app.data.locales[lang][:name] %></span>
+                <% language_options.each do |optlang| %>
+                  <a href="<%= url_for(AppHelper.page_reference(current_page), locale: optlang[:lang]) %>" title="<%= optlang[:title] %>"><%= optlang[:title] %></a>
+                <% end %>
+              </div>
+            </div>
+          </li>
         </ul>
+        <% end %>
       </nav>
       <%= yield %>
       <footer class="footer">
