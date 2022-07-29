@@ -13,7 +13,7 @@ module AppHelper
 
   def self.page_reference(page)
     ref = page.source_file.gsub(/.*localizable/, "")
-    ref.gsub(".erb", "") 
+    ref.gsub(".erb", "")
   end
 
   def language_options

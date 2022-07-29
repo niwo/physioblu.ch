@@ -28,6 +28,7 @@
         </a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <% if current_page.source_file.include? "localizable" %>
         <ul class="menu">
           <li>
             <%= link_to t("team"), "/#{I18n.locale}", fragment: "team", title: t("team") %>
@@ -59,6 +60,7 @@
             </div>
           </li>
         </ul>
+        <% end %>
       </nav>
       <%= yield %>
       <footer class="footer">
