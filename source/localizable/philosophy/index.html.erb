@@ -7,8 +7,3 @@ title_translation_key: philosophy
 <div class="container">
   <%= Markdown.renderer.render(I18n.t("philosophy_text")).html_safe %>
 </div>
-
-<section class="container">
-  <hr>
-  <a class="button" href="<%= url_for('/') %>"><%= t "back" %></a>
-</section>
