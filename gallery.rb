@@ -22,7 +22,7 @@ end
 
 # output html help
 puts
-puts "Use the following markup to referenc all images:"
+puts "Use the following markup to reference all images:"
 puts "-" * 60 
 images.each do |image_path|
   gallery_url = GALLERY_DIR.gsub(/^source/, "")
