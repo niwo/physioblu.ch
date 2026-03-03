@@ -3,10 +3,10 @@
 physio:
   -
     units: 30
-    price: 60.-
+    price: 70.-
   -
     units: 45
-    price: 90.-
+    price: 105.-
   -
     units: 60
-    price: 120.-
+    price: 140.-
